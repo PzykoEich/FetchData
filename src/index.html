@@ -1,53 +1,79 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Covid 19</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pruebas</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script src="/src/js/code.js" defer></script>
 </head>
 <body>
-  
-  <nav id="nav-bar">
-    <div id="logo"></div>
-    <div></div>
-    <div>
-      <ul class="nav-bar-menu">
-        <li class="nav-bar-item">Home</li>
-        <li class="nav-bar-item">About us</li>
-        <li class="nav-bar-item">Contact us</li>
-      </ul>
-    </div>
-  </nav>
+    <!-- Nav bar -->
+    <nav id="nav-menu">
+        <div id="logo" class="nav-menu-div"></div>
+        <div class="nav-menu-div"></div>
+        <div class="nav-menu-div">
+            <ul class="nav-menu-list">
+                <li class="nav-menu-item"><a href="#">Home</a></li>
+                <span>|</span>
+                <li class="nav-menu-item"><a href="#">About us</a></li>
+                <span>|</span>
+                <li class="nav-menu-item"><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+    </nav>
 
-  <main class="main-container">
-    <section class="main-container-section">
-      <form action="">
-        <label for="country">Escribre el pais a consultar</label>
-        <input type="text" name="country">
-        <submit>Consultar</submit>
-      </form>
+    <!-- Hero -->
+    <section id="hero">
+        <h1>Consulta de casos de Covid </h1>
+        <div>
+            <picture class="hero-image">
+
+            </picture>
+            <p class="hero-parrafo">Consulta los casos actuales de covid en tu pais</p>
+        </div>
     </section>
-  </main>
-  <aside class="aside-rigth">
-    
-  </aside>
-  <aside class="aside-left">
-    
-  </aside>
 
-  <footer>
-    <div></div>
-    <div>
-      
-    </div>
-    <div>
-      <ul class="footer-menu">
-        <li class="footer-item">Home</li>
-        <li class="footer-item">About</li>
-        <li class="footer-item">Contact us</li>
-      </ul>
-    </div>
-  </footer>
+    <!-- Principal Section -->
+    <section class="main-container">
+        <div class="main-container-holder">
+            <!-- consult Section -->
+            <div class="main-container-search form-general">
+
+                <label class="letras" for="country">Selecciona el pais</label>
+                <input type="text" placeholder="Mexico" class="selectCountry">
+                <button class="btn-select-country">Consultar</button>
+            </div>
+            <!-- form section -->
+            <div class="main-container-form form-general">
+                <form action="">
+                    <label class="letras" for="set-country">Pais:</label>
+                    <input type="text" name="set-country" readonly class="country">
+
+                    <label class="letras" for="cases">Casos:</label>
+                    <input type="text" name="cases" class="input-form" readonly class="cases">
+
+                    <label class="letras" for="date"> Fecha de actualización:</label>
+                    <input type="text" name="date" class="input-form" readonly class="date">
+                    <input type="submit" value="Nuevo" class="sub-form">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer id="footer">
+        <div class="div-footer">Copy</div>
+        <div class="div-footer"></div>
+        <!-- Menu section -->
+        <div class="div-footer">
+            <ul class="footer-menu">
+                <li class="footer-menu-item">Home</li>
+                <li class="footer-menu-item">About Us</li>
+                <li class="footer-menu-item">Contact Us</li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
