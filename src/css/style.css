@@ -71,7 +71,7 @@
     width: 100%;
     height: 400px;
     text-align: center;
-    background-image: url("/src/img/corona-g35d9a55fd_1920.jpg");
+    background-image: url("./src/img/corona-g35d9a55fd_1920.jpg");
     background-size: cover;
     color: var(--white);
 }
