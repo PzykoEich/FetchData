@@ -18,5 +18,6 @@
   "homepage": "https://github.com/PzykoEich/FetchData#readme",
   "dependencies": {
     "node-fetch": "^3.3.0"
-  }
+  },
+  "type": "module"
 }

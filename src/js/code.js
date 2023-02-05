@@ -1,7 +1,7 @@
-//
-const fetch = require('node-fetch');
+import fetch from "node-fetch";
+//const fetch = require('node-fetch');
 
-const url = 'https://covid-193.p.rapidapi.com/statistics?country=';
+const API = 'https://covid-193.p.rapidapi.com/statistics?country=';
 
 const options = {
   method: 'GET',
@@ -32,7 +32,8 @@ country.set
 
 function consulta(){
     let countrys = selectCountry.value;
-    url = url + countrys
+    console.log(countrys);
+    let url = API + countrys
     fetch(url, options)
 	.then(res => res.json())
 	.then(json => console.log(json))
