@@ -11,17 +11,30 @@ const options = {
   }
 };
 
+async function fetchData(urlAPI){
+  const response = await fetch(urlAPI,options);
+  const data = await response.json();
+  return data;
+}
 
+(async () => {
+  try{
+    const pais = await fetchData(API+'mexico');
+
+  }catch{
+
+  }
+})();
 
 // inputs
-const selectCountry = document.querySelector('.selectCountry');
-const country = document.querySelector(".country");
-const cases = document.querySelector('.cases');
-const date = document.querySelector('.date');
+const selectCountry = null || document.querySelector('.selectCountry');
+const country = null || document.querySelector(".country");
+const cases = null || document.querySelector('.cases');
+const date = null || document.querySelector('.date');
 
 //botones
-const btnSelectCountry = document.querySelector('.btn-select-country');
-const btnNew = document.querySelector('.sub-form');
+const btnSelectCountry = null || document.querySelector('.btn-select-country');
+const btnNew = null || document.querySelector('.sub-form');
 
 btnSelectCountry.addEventListener('click', consulta);
 btnNew.addEventListener('click', nuevo);
